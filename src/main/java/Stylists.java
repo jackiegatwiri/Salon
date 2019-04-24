@@ -4,9 +4,9 @@ import org.sql2o.*;
 
 public class Stylists {
 
-//    private String name;
-//    private String number;
-//    private int id;
+    private String name;
+    private String number;
+    private int id;
 
     public Stylists(String name, String number) {
         this.name = name;

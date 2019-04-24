@@ -13,15 +13,15 @@ public class Stylists {
         this.number = number;
     }
 
-    public String getName() {
-        return name;
-    }
-    public String getNumber() {
-        return number;
-    }
-    public int getId() {
-        return id;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//    public String getNumber() {
+//        return number;
+//    }
+//    public int getId() {
+//        return id;
+//    }
 
     public static List<Stylists> all() { //returns all the stylists from stylists table
         String sql = "SELECT id, name, number FROM stylists";

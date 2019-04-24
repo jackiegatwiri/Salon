@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="text">
+<p class="head">Add a new Client:</p>
+
+<form action="/clients" method="post">
+    <div class="form-group">
+        <label for="name">Enter Client's Name</label>
+        <input id="name" name="name" type="text" class="form-control"> <br>
+
+        <label for="number">Enter Client's Number</label>
+        <input id="number" name="number" type="number" class="form-control"> <br>
+
+        <select id="style" name="style" class="form-control" >
+            <option value="Salon">Salon</option>
+            <option value="Barber">Barber</option>
+        </select>
+
+
+        <button id="stylistButton" type="submit" class="btn btn-primary" >Add client</button>
+    </div>
+</form>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="text">
+<h1 class="head">Add a client to $stylist.getName()</h1>
+
+<form action="/clients" method="post">
+    <input id="stylistid" name="stylistid" type="hidden" value="$stylist.getId()">
+
+    <div class="form-group">
+        <label for="name">Enter Client's Name:</label>
+        <input id="name" name="name" type="text" class="form-control" placeholder="Enter Name"> <br>
+
+        <label for="number">Enter Client's Number:</label>
+        <input id="number" name="number" type="number" class="form-control" placeholder="Enter Number"> <br>
+
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" class="form-control" >
+            <option value="Salon">Salon</option>
+            <option value="Barber">Barber</option>
+        </select>
+
+<!--        <label for="style">Enter Client's Style</label>-->
+<!--        <input id="style" name="style" type="text" class="form-control"> <br>-->
+    </div>
+
+    <button id="stylistButton" type="submit" class="btn btn-primary" >Add Client</button>
+</form>
+    </div>
+</div>

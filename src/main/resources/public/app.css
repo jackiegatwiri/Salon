@@ -1,0 +1,77 @@
+body{
+  background-image: url('/photos/home.jpg');
+
+}
+.welcome {
+font-family: 'Courgette', cursive;
+color:white;
+margin-top:6em;
+text-align:center;
+font-size:3em;
+}
+.button {
+margin-top:4em;
+text-align:center;
+}
+.text{
+color:white;
+margin-top:7em;
+}
+.tex{
+color:white;
+
+}
+.head{
+font-family: 'Carter One', cursive;
+font-size:3em;
+text-align:center;
+}
+#stylistButton{
+margin-top:3em;
+margin-left:30em;
+}
+.save{
+font-family: 'Courgette', cursive;
+color:white;
+text-align:center;
+font-size:3em;
+}
+
+.one{
+margin-top:5em;
+}
+.welcom{
+font-family: 'Courgette', cursive;
+color:white;
+margin-top:3em;
+text-align:center;
+font-size:3em;
+}
+#stylistbutton{
+margin-top:3em;
+margin-left:30em;
+}
+.colm{
+color:white;
+font-size:2em;
+}
+#stylistbuton{
+margin-top:3em;
+margin-left:30em;
+}
+.welco{
+font-family: 'Courgette', cursive;
+color:white;
+margin-top:1em;
+text-align:center;
+font-size:3em;
+}
+
+.li {
+text-align:center;
+}
+.stylistbuton{
+width:20%;
+margin-left:40%;
+margin-right:40%;
+}

@@ -1,0 +1,36 @@
+<div class="container">
+<div class="one">
+<h1 class="welcom">All Stylists</h1>
+
+<ol>
+    #foreach ($stylist in $stylists)
+
+    <div class="row">
+    <div class="col-md-3 colm">
+    <li>$stylist.getName()
+    </div>
+        <div class="col-md-3 colm">
+            $stylist.getNumber()
+        </div>
+        <div class="col-md-3">
+            <a href="/stylists/$stylist.getId()" class="btn btn-info">Add Client</a>
+        </div>
+    <div class="col-md-3">
+        <form action="/stylists/$stylist.getId()/delete" method="post">
+            <button type="submit" class="btn btn-danger" id="delete-task">Delete</button>
+        </form>
+    </div>
+
+
+    </li>
+    </div>
+    #end
+</ol>
+
+    <a href="/stylists/new" class="btn btn-success" id="stylistbutton">Add New Stylist</a>
+</div>
+</div>
+
+
+
+

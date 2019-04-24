@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+archivesBaseName = "Salon"
+group 'com.jackie.salon'
+version '1.0-SNAPSHOT'
+mainClassName = "App"
+applicationName = "Salon"
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+    compile 'com.sparkjava:spark-template-velocity:2.5.5'
+    compile group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
+    compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
+}
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])

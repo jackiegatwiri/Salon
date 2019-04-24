@@ -1,0 +1,40 @@
+<div class="welco">
+<p>Name: $client.getName()</p>
+    <p>Number: $client.getnumber()</p>
+    <p>Style: $client.getStyle()</p>
+</div>
+<div class="tex">
+
+<p class=""> Edit Client:</p>
+
+<form action="/stylists/$client.getStylistid()/clients/$client.getId()" method="post">
+    <div class="form-group">
+        <label for="name">Enter Client's Name</label>
+        <input id="name" name="name" type="text" class="form-control" placeholder="Enter Name"> <br>
+
+        <label for="number">Enter Client's Number</label>
+        <input id="number" name="number" type="text" class="form-control" placeholder="+254"> <br>
+
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" class="form-control" >
+            <option value="Salon">Salon</option>
+            <option value="Kinyozi">Kinyozi</option>
+        </select>
+
+<!--        <label for="style">Enter Client's Style</label>-->
+<!--        <input id="style" name="style" type="text" class="form-control"> <br>-->
+
+        <button type="submit" class="btn btn-primary" >Update client</button>
+    </div>
+</form>
+
+<form action="/stylists/$client.getStylistid()/clients/$client.getId()/delete" method="post">
+    <button type="submit" class="btn btn-danger" id="delete-client">Delete Client</button>
+</form>
+</div>
+
+<a href="/stylists/$stylist.getId()" class="btn btn-success li">Return to $stylist.getName()</a>
+
+
+<!--<a href="/clients/new">Add another client</a>-->
+<!--<a href="/clients">All clients</a>-->

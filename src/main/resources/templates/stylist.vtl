@@ -1,0 +1,49 @@
+<!--<h1>$stylist.getName()</h1>-->
+<!--<p>$stylist.getNumber()</p>-->
+
+
+<!--<ul>-->
+<!--    #foreach($client in $stylist.getClients())-->
+<!--    <li><a href="/stylists/$stylist.getId()/clients/$client.getId()">$client.getName()</a></li>-->
+<!--    $client.getnumber() <br>-->
+<!--    $client.getStyle()-->
+<!--    #end-->
+<!--</ul>-->
+
+<!--<a href="/stylists/$stylist.getId()/clients/new">Add a new client</a>-->
+<!--<a href="/stylists">All stylists</a>-->
+
+<div class="container">
+    <div class="one">
+        <h1 class="welcom">All Clients Created for this Stylist</h1>
+
+        <ol>
+            #foreach ($client in $stylist.getClients())
+
+            <div class="row">
+                <div class="col-md-3 colm">
+                    <li>$client.getName()
+                </div>
+                <div class="col-md-3 colm">
+                    $client.getnumber()
+                </div>
+                <div class="col-md-3 colm">
+                    $client.getStyle()
+                </div>
+
+                <div class="col-md-3 colm">
+                    <a href="/stylists/$stylist.getId()/clients/$client.getId()" class="btn btn-success">See Client Details</a>
+                </div>
+
+
+
+                </li>
+            </div>
+            #end
+        </ol>
+
+
+        <a href="/stylists/$stylist.getId()/clients/new" class="btn btn-info stylistbuton">Add a New Client</a>
+        <a href="/stylists" class="btn btn-info stylistbuton">All Stylists</a>
+    </div>
+</div>

@@ -9,12 +9,12 @@ public class Clients {
     private int id;
     private int stylistid;
 
-    public Clients(String name, String number, String style, int stylistid){
-        this.name = name;
-        this.number = number;
-        this.style = style;
-        this.stylistid = stylistid;
-    }
+//    public Clients(String name, String number, String style, int stylistid){
+//        this.name = name;
+//        this.number = number;
+//        this.style = style;
+//        this.stylistid = stylistid;
+//    }
 
     @Override
     public boolean equals(Object otherClient) {

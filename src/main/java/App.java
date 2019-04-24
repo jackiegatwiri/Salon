@@ -28,11 +28,11 @@ public class App {
 
 
 
-//        get("/", (request, response) -> { //root page
-//            Map<String, Object>model = new HashMap<String, Object>();
-//            model.put("template", "templates/index.vtl");
-//            return modelAndView(model,layout);
-//        }, new VelocityTemplateEngine());
+        get("/", (request, response) -> { //root page
+            Map<String, Object>model = new HashMap<String, Object>();
+            model.put("template", "templates/index.vtl");
+            return modelAndView(model,layout);
+        }, new VelocityTemplateEngine());
 
         get("clients/new", (request, response) -> { //creating a new client
             Map<String, Object> model = new HashMap<String, Object>();

@@ -40,12 +40,12 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/clients", (request, response) -> { //getting all the clients created in the database and displaying it in clients.vtl
-            Map<String, Object> model = new HashMap<String, Object>();
-            model.put("clients", Clients.all());
-            model.put("template", "templates/clients.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+//        get("/clients", (request, response) -> { //getting all the clients created in the database and displaying it in clients.vtl
+//            Map<String, Object> model = new HashMap<String, Object>();
+//            model.put("clients", Clients.all());
+//            model.put("template", "templates/clients.vtl");
+//            return new ModelAndView(model, layout);
+//        }, new VelocityTemplateEngine());
 
         post("/clients", (request, response) -> { //posting new client in the clients.vtl, but first create a success page
             Map<String, Object> model = new HashMap<String, Object>();

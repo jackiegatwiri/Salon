@@ -3,11 +3,11 @@ import java.util.List;
 import org.sql2o.*;
 
 public class Clients {
-    private String name;
-    private String number;
-    private String style;
-    private int id;
-    private int stylistid;
+//    private String name;
+//    private String number;
+//    private String style;
+//    private int id;
+//    private int stylistid;
 
     public Clients(String name, String number, String style, int stylistid){
         this.name = name;
